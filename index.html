@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diego Alexander Muñoz Guzmán | Desarrollador Web Junior</title>
+  <meta name="description" content="Portafolio profesional de Diego Alexander Muñoz Guzmán. Desarrollador Web Junior especializado en Next.js, React, TypeScript, Tailwind CSS y PostgreSQL.">
+  <meta name="keywords" content="Diego Muñoz, Desarrollador Web, Full-Stack Jr, Next.js, React, TypeScript, Tailwind CSS, PostgreSQL, Portafolio">
+  <meta name="author" content="Diego Alexander Muñoz Guzmán">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Diego Alexander Muñoz Guzmán | Desarrollador Web Junior">
+  <meta property="og:description" content="Portafolio profesional y proyectos en Next.js, React, TypeScript y PostgreSQL.">
+  <meta property="og:image" content="assets/images/avatar.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23556115'/><text x='50%' y='55%' text-anchor='middle' fill='%23FAFAED' font-family='sans-serif' font-size='50' font-weight='bold' dy='.3em'>D</text></svg>">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Ambient Glow Elements (Natural Palette lighting) -->
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
+  <div class="ambient-glow ambient-glow-3"></div>
+  <div class="ambient-glow ambient-glow-4"></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <a href="#inicio" class="nav-brand" aria-label="Inicio">
+        <div class="brand-symbol">D</div>
+        <span>Diego Muñoz</span>
+      </a>
+
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Abrir menú" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#inicio" class="nav-link active">Inicio</a>
+        <a href="#experiencia" class="nav-link">Experiencia</a>
+        <a href="#habilidades" class="nav-link">Habilidades</a>
+        <a href="#proyectos" class="nav-link">Proyectos</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+        <a href="#contacto" class="nav-cta">Hablemos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="inicio">
+      <div class="container">
+        
+        <!-- Profile Photo with Olive/Sage Aura -->
+        <div class="hero-avatar-wrapper">
+          <div class="hero-avatar-glow"></div>
+          <div class="hero-avatar-frame">
+            <img src="assets/images/avatar.jpg" alt="Fotografía de Diego Alexander Muñoz Guzmán" class="hero-avatar-img">
+          </div>
+        </div>
+
+        <!-- Speech Bubble Badge -->
+        <div>
+          <div class="hero-bubble">
+            <span>👋 ¡Hola! Soy</span>
+            <span class="hero-bubble-highlight">Diego Alexander Muñoz Guzmán</span>
+            <span>• Desarrollador Web</span>
+          </div>
+        </div>
+
+        <!-- Title & Subtitle -->
+        <h1 class="hero-title">
+          Soy Desarrollador Web Junior<span class="cursor">_</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Especializado en <span class="tag-highlight">Next.js (App Router), React & TypeScript</span> con bases en <strong>PostgreSQL</strong>.
+        </p>
+
+        <p class="hero-description">
+          Desarrollador apasionado por crear aplicaciones web modernas, intuitivas y eficientes. Con experiencia en la construcción de soluciones Full-Stack desde cero, aseguramiento de calidad (QA) y optimización continua de sistemas en producción.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-actions">
+          <a href="#proyectos" class="btn btn-primary">
+            <span>Ver Proyectos Destacados</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/diego-guzman-2494331a1/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64a1.65 1.65 0 0 0-1.66 1.66 1.66 1.66 0 0 0 1.66 1.66 1.66 1.66 0 0 0 1.66-1.66 1.65 1.65 0 0 0-1.66-1.66Z"/>
+            </svg>
+            <span>Conectar en LinkedIn</span>
+          </a>
+          <a href="https://github.com/diego19-dev" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/>
+            </svg>
+            <span>GitHub</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Work Experience Section (2x2 Glass Cards) -->
+    <section class="section" id="experiencia">
+      <div class="container">
+        
+        <div class="section-header">
+          <h2 class="section-title">Experiencia & Trayectoria</h2>
+          <p class="section-subtitle">Roles clave, proyectos integrales y evolución técnica.</p>
+        </div>
+
+        <div class="experience-grid">
+          
+          <!-- Card 1: RentToWork -->
+          <article class="experience-card">
+            <div>
+              <div class="card-top">
+                <div class="card-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                </div>
+                <div class="card-meta">
+                  <span class="card-period">Proyecto Personal Full-Stack</span>
+                  <h3 class="card-title">Plataforma RentToWork</h3>
+                  <div class="card-company">Coworking & Gestión de Espacios</div>
+                </div>
+              </div>
+              <p class="card-description">
+                Desarrollo desde cero de una plataforma web Full-Stack con Next.js (App Router), React, TypeScript y Tailwind CSS, permitiendo la reserva y gestión de espacios de trabajo en tiempo real con persistencia en base de datos.
+              </p>
+            </div>
+            <div>
+              <div class="card-tags">
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Tailwind CSS</span>
+                <span class="tech-tag">PostgreSQL</span>
+              </div>
+              <a href="#proyectos" class="card-btn">
+                <span>Ver Proyecto</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 2: Smart CSET Mantenimiento -->
+          <article class="experience-card">
+            <div>
+              <div class="card-top">
+                <div class="card-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                  </svg>
+                </div>
+                <div class="card-meta">
+                  <span class="card-period">2024 - 2026</span>
+                  <h3 class="card-title">Desarrollo y Mantenimiento</h3>
+                  <div class="card-company">Plataforma Smart CSET</div>
+                </div>
+              </div>
+              <p class="card-description">
+                Participé en la evolución técnica y estabilización de la plataforma institucional Smart CSET, resolviendo incidencias de código y asegurando la continuidad operativa y rendimiento de los módulos críticos en producción.
+              </p>
+            </div>
+            <div>
+              <div class="card-tags">
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">API REST</span>
+                <span class="tech-tag">Optimización</span>
+              </div>
+              <a href="#proyectos" class="card-btn">
+                <span>Ver Módulos</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 3: QA Testing -->
+          <article class="experience-card">
+            <div>
+              <div class="card-top">
+                <div class="card-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    <polyline points="9 12 11 14 15 10"></polyline>
+                  </svg>
+                </div>
+                <div class="card-meta">
+                  <span class="card-period">Calidad & Pruebas</span>
+                  <h3 class="card-title">Aseguramiento de Calidad (QA)</h3>
+                  <div class="card-company">Validación de Flujos Críticos</div>
+                </div>
+              </div>
+              <p class="card-description">
+                Diseñé y ejecuté planes estructurados y cronogramas de pruebas unitarias y de integración, validando rigurosamente el correcto funcionamiento de flujos clave de negocio antes de los despliegues oficiales.
+              </p>
+            </div>
+            <div>
+              <div class="card-tags">
+                <span class="tech-tag">Pruebas Unitarias</span>
+                <span class="tech-tag">Pruebas de Integración</span>
+                <span class="tech-tag">Control de Calidad</span>
+              </div>
+              <a href="#contacto" class="card-btn">
+                <span>Saber Más</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 4: Frontend & Arquitectura Web -->
+          <article class="experience-card">
+            <div>
+              <div class="card-top">
+                <div class="card-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                    <polyline points="2 17 12 22 22 17"></polyline>
+                    <polyline points="2 12 12 17 22 12"></polyline>
+                  </svg>
+                </div>
+                <div class="card-meta">
+                  <span class="card-period">Ingeniería Frontend</span>
+                  <h3 class="card-title">Arquitectura e Interfaces Web</h3>
+                  <div class="card-company">Componentes React & UI Moderna</div>
+                </div>
+              </div>
+              <p class="card-description">
+                Diseño de interfaces modernas con Tailwind CSS y componentes modulares en React. Enfoque riguroso en rendimiento web, diseño responsivo para todo tipo de pantallas y accesibilidad para los usuarios.
+              </p>
+            </div>
+            <div>
+              <div class="card-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Tailwind</span>
+                <span class="tech-tag">UI/UX</span>
+              </div>
+              <a href="#habilidades" class="card-btn">
+                <span>Ver Habilidades</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Skills & Tech Stack Section -->
+    <section class="skills-section" id="habilidades">
+      <div class="container">
+        
+        <p class="skills-quote">
+          Buscando aportar valor en equipos multidisciplinarios creando soluciones <span class="highlight">accesibles, escalables</span> y centradas en el usuario.
+        </p>
+
+        <div class="skills-grid">
+          <div class="skill-pill">
+            <span class="skill-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </span>
+            <span>Next.js (App Router)</span>
+          </div>
+
+          <div class="skill-pill">
+            <span class="skill-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"/></svg>
+            </span>
+            <span>React</span>
+          </div>
+
+          <div class="skill-pill">
+            <span class="skill-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </span>
+            <span>TypeScript</span>
+          </div>
+
+          <div class="skill-pill">
+            <span class="skill-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/></svg>
+            </span>
+            <span>Tailwind CSS</span>
+          </div>
+
+          <div class="skill-pill">
+            <span class="skill-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </span>
+            <span>PostgreSQL</span>
+          </div>
+
+          <div class="skill-pill">
+            <span class="skill-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>
+            </span>
+            <span>JavaScript (ES6+)</span>
+          </div>
+
+          <div class="skill-pill">
+            <span class="skill-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M13 6h3a2 2 0 0 1 2 2v7"/><line x1="6" y1="9" x2="6" y2="21"/></svg>
+            </span>
+            <span>Git & GitHub</span>
+          </div>
+
+          <div class="skill-pill">
+            <span class="skill-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 8h10M7 12h10M7 16h6"/></svg>
+            </span>
+            <span>PHP & REST APIs</span>
+          </div>
+
+          <div class="skill-pill">
+            <span class="skill-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </span>
+            <span>Aseguramiento de Calidad (QA)</span>
+          </div>
+
+          <div class="skill-pill">
+            <span class="skill-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"/><path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"/><path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"/><path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"/><path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"/></svg>
+            </span>
+            <span>Figma UI/UX</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Orbital Cosmic Logo Separator (Iconic Figma centerpiece) -->
+    <div class="orbital-separator">
+      <div class="orbital-ring ring-1"></div>
+      <div class="orbital-ring ring-2"></div>
+      <div class="orbital-ring ring-3"></div>
+      <div class="orbital-center">D</div>
+    </div>
+
+    <!-- Featured Projects Section (Zigzag Layout) -->
+    <section class="section" id="proyectos">
+      <div class="container">
+        
+        <div class="section-header">
+          <h2 class="section-title">Proyectos Destacados</h2>
+          <p class="section-subtitle">Soluciones reales desarrolladas con tecnologías modernas.</p>
+        </div>
+
+        <div class="projects-container">
+
+          <!-- Project 1: Monteverde Golf Club (Featured Hero Project) -->
+          <article class="project-item">
+            <div class="project-mockup-wrapper">
+              <a href="https://landing-page-club-golf-5eyutj4vk-dg945517-4228s-projects.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Abrir demo en vivo de Monteverde Golf Club">
+                <img src="assets/images/project_golf.jpg" alt="Plataforma web Monteverde Golf Club" class="project-mockup-img">
+              </a>
+            </div>
+
+            <div class="project-content">
+              <p class="project-eyebrow">Campo Privado & Recorrido de Campeonato (1987)</p>
+              <h3 class="project-name">Monteverde Golf Club</h3>
+
+              <div class="project-glass-card">
+                <p>
+                  Plataforma web interactiva desarrollada para un club de golf privado de 18 hoyos de campeonato. Incluye sistema dinámico de reserva de Tee Times, catálogo y tienda boutique Pro Shop con carrito de compras, gestión de admisiones, reglas de etiqueta y control de acceso por roles (Socio, Starter y Administrador) con diseño adaptativo de primer nivel.
+                </p>
+              </div>
+
+              <div class="project-tech-list">
+                <span class="project-tech-item">Next.js</span>
+                <span class="project-tech-item">React</span>
+                <span class="project-tech-item">TypeScript</span>
+                <span class="project-tech-item">Tailwind CSS</span>
+                <span class="project-tech-item">Auth Context</span>
+                <span class="project-tech-item">Role Access</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/diego19-dev/landing-page-club-golf.git" target="_blank" rel="noopener noreferrer" class="project-icon-link" aria-label="Ver repositorio Monteverde Golf Club en GitHub">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/>
+                  </svg>
+                </a>
+                <a href="https://landing-page-club-golf-5eyutj4vk-dg945517-4228s-projects.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 8px 18px; font-size: 0.85rem;">
+                  <span>Demo en Vivo</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: RentToWork (Inverted) -->
+          <article class="project-item inverted">
+            <div class="project-mockup-wrapper">
+              <img src="assets/images/project_renttowork.jpg" alt="Captura de pantalla de la plataforma RentToWork" class="project-mockup-img">
+            </div>
+
+            <div class="project-content">
+              <p class="project-eyebrow">Proyecto Destacado Full-Stack</p>
+              <h3 class="project-name">RentToWork</h3>
+
+              <div class="project-glass-card">
+                <p>
+                  Plataforma web Full-Stack diseñada desde cero para la gestión y reserva de espacios de coworking en tiempo real. Incluye visualización de disponibilidad de escritorios y salas, panel de métricas de ocupación, calendarios interactivos y arquitectura moderna con Next.js App Router y PostgreSQL.
+                </p>
+              </div>
+
+              <div class="project-tech-list">
+                <span class="project-tech-item">Next.js</span>
+                <span class="project-tech-item">TypeScript</span>
+                <span class="project-tech-item">React</span>
+                <span class="project-tech-item">Tailwind CSS</span>
+                <span class="project-tech-item">PostgreSQL</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/diego19-dev" target="_blank" rel="noopener noreferrer" class="project-icon-link" aria-label="Ver código en GitHub">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/>
+                  </svg>
+                </a>
+                <a href="#contacto" class="btn btn-primary" style="padding: 9px 20px; font-size: 0.88rem;">
+                  <span>Conocer más</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Tangram -->
+          <article class="project-item">
+            <div class="project-mockup-wrapper">
+              <img src="assets/images/project_tangram.jpg" alt="Visualizador de arquitectura interactiva Tangram" class="project-mockup-img">
+            </div>
+
+            <div class="project-content">
+              <p class="project-eyebrow">Arquitectura & Herramientas Dev</p>
+              <h3 class="project-name">Tangram</h3>
+
+              <div class="project-glass-card">
+                <p>
+                  Herramienta interactiva de diseño y visualización de sistemas paso a paso ("Architectures, piece by piece"). Proporciona un lienzo donde se conectan componentes (frontend, backend, base de datos, colas y caches) facilitando el entendimiento visual de arquitecturas distribuidas.
+                </p>
+              </div>
+
+              <div class="project-tech-list">
+                <span class="project-tech-item">React</span>
+                <span class="project-tech-item">TypeScript</span>
+                <span class="project-tech-item">System Design</span>
+                <span class="project-tech-item">Canvas UI</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/diego19-dev/tangram.git" target="_blank" rel="noopener noreferrer" class="project-icon-link" aria-label="Ver repositorio Tangram en GitHub">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/>
+                  </svg>
+                </a>
+                <a href="https://github.com/diego19-dev/tangram.git" target="_blank" rel="noopener noreferrer" class="project-icon-link" aria-label="Abrir repositorio">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Cartelera Digital CSET (Inverted) -->
+          <article class="project-item inverted">
+            <div class="project-mockup-wrapper">
+              <img src="assets/images/project_cartelera.jpg" alt="Panel de control de Cartelera Digital CSET" class="project-mockup-img">
+            </div>
+
+            <div class="project-content">
+              <p class="project-eyebrow">Sistema Institucional Signage 24/7</p>
+              <h3 class="project-name">Cartelera Digital CSET</h3>
+
+              <div class="project-glass-card">
+                <p>
+                  Sistema de cartelería digital para Institución de Educación Superior. Emisión continua en Smart TVs y monitores Signage 24/7, gestionado desde un panel de control administrativo desarrollado sobre API PHP con base de datos PostgreSQL, soporte de listas de reproducción y monitorización de pantallas activas.
+                </p>
+              </div>
+
+              <div class="project-tech-list">
+                <span class="project-tech-item">PostgreSQL</span>
+                <span class="project-tech-item">PHP</span>
+                <span class="project-tech-item">API REST</span>
+                <span class="project-tech-item">Signage 24/7</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/diego19-dev/cartelera.git" target="_blank" rel="noopener noreferrer" class="project-icon-link" aria-label="Ver repositorio Cartelera en GitHub">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/>
+                  </svg>
+                </a>
+                <a href="https://github.com/diego19-dev/cartelera.git" target="_blank" rel="noopener noreferrer" class="project-icon-link" aria-label="Abrir enlace del proyecto">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact & Footer Section -->
+    <section class="contact-section" id="contacto">
+      <div class="container">
+        
+        <div class="contact-card">
+          <p class="contact-eyebrow">¿Tienes una oportunidad o proyecto en mente?</p>
+          <h2 class="contact-heading">Creemos algo extraordinario juntos</h2>
+          <p class="contact-desc">
+            Estoy buscando activamente integrarme a un equipo donde pueda seguir aportando y aprendiendo como Desarrollador Web Junior. Si buscas un perfil comprometido, con iniciativa y atención al detalle, ¡escríbeme!
+          </p>
+
+          <div class="contact-actions">
+            <a href="https://www.linkedin.com/in/diego-guzman-2494331a1/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64a1.65 1.65 0 0 0-1.66 1.66 1.66 1.66 0 0 0 1.66 1.66 1.66 1.66 0 0 0 1.66-1.66 1.65 1.65 0 0 0-1.66-1.66Z"/>
+              </svg>
+              <span>Escríbeme por LinkedIn</span>
+            </a>
+
+            <button class="btn btn-secondary" id="copy-email-btn" data-email="dg945517@gmail.com" aria-label="Copiar correo electrónico">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copiar Correo</span>
+            </button>
+          </div>
+
+          <div class="social-links">
+            <a href="https://github.com/diego19-dev" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Perfil de GitHub">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/>
+              </svg>
+            </a>
+
+            <a href="https://www.linkedin.com/in/diego-guzman-2494331a1/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Perfil de LinkedIn">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64a1.65 1.65 0 0 0-1.66 1.66 1.66 1.66 0 0 0 1.66 1.66 1.66 1.66 0 0 0 1.66-1.66 1.65 1.65 0 0 0-1.66-1.66Z"/>
+              </svg>
+            </a>
+
+            <a href="mailto:dg945517@gmail.com" class="social-btn" aria-label="Enviar correo electrónico">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-copy">
+        <div class="brand-symbol" style="width: 24px; height: 24px; font-size: 0.75rem; border-radius: 6px;">D</div>
+        <span>Diego Alexander Muñoz Guzmán • Portafolio Web</span>
+      </div>
+      <div>
+        <span>Diseñado e inspirado en Figma Dark Mode • © <span id="current-year">2026</span></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

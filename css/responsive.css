@@ -1,0 +1,173 @@
+/* ==========================================================================
+   RESPONSIVE DESIGN (Tablets & Mobile)
+   ========================================================================== */
+
+@media (max-width: 992px) {
+  .experience-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Projects stack on tablets/smaller screens */
+  .project-item,
+  .project-item.inverted {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .project-mockup-wrapper,
+  .project-item.inverted .project-mockup-wrapper {
+    width: 100%;
+    order: 1;
+  }
+
+  .project-content,
+  .project-item.inverted .project-content {
+    width: 100%;
+    order: 2;
+    text-align: left;
+  }
+
+  .project-item.inverted .project-tech-list,
+  .project-item.inverted .project-links {
+    justify-content: flex-start;
+  }
+
+  .project-glass-card {
+    margin-top: -30px;
+    position: relative;
+    z-index: 3;
+    padding: 24px;
+  }
+
+  .projects-container {
+    gap: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    height: 64px;
+  }
+
+  .nav-container {
+    height: 64px;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+    z-index: 101;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 340px;
+    height: 100vh;
+    background: rgba(11, 5, 26, 0.96);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border-left: 1px solid rgba(168, 85, 247, 0.25);
+    flex-direction: column;
+    justify-content: center;
+    gap: 28px;
+    padding: 40px;
+    transition: right var(--transition-normal);
+    z-index: 100;
+  }
+
+  .nav-links.active {
+    right: 0;
+    box-shadow: -20px 0 50px rgba(0, 0, 0, 0.8);
+  }
+
+  .nav-link {
+    font-size: 1.2rem;
+  }
+
+  .hero-section {
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+
+  .hero-avatar-frame {
+    width: 140px;
+    height: 140px;
+  }
+
+  .hero-avatar-glow {
+    width: 180px;
+    height: 180px;
+  }
+
+  .hero-bubble {
+    font-size: 0.85rem;
+    padding: 6px 14px;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .experience-card {
+    padding: 24px;
+  }
+
+  .contact-card {
+    padding: 40px 20px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .orbital-ring.ring-2,
+  .orbital-ring.ring-3 {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .card-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .project-name {
+    font-size: 1.5rem;
+  }
+
+  .project-glass-card {
+    padding: 18px;
+  }
+
+  .skills-grid {
+    gap: 10px;
+  }
+
+  .skill-pill {
+    padding: 8px 14px;
+    font-size: 0.88rem;
+  }
+}

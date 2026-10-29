@@ -1,0 +1,18 @@
+{
+  "name": "portafolio-diego-munoz",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portafolio web personal de Diego Alexander Muñoz Guzmán",
+  "scripts": {
+    "dev": "python3 -m http.server 3000",
+    "start": "python3 -m http.server 3000",
+    "serve": "python3 -m http.server 3000"
+  },
+  "keywords": [
+    "portfolio",
+    "developer",
+    "diego-munoz"
+  ],
+  "author": "Diego Alexander Muñoz Guzmán",
+  "license": "MIT"
+}
